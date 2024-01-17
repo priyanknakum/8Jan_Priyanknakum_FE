@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+button:hover {
+  color: #000;
+  background-color: #f76c6c;
+}
+header {
+  height: 100px;
+  width: 100%;
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background: transparent;
+  position: fixed;
+  backdrop-filter: blur(5px);
+}
+header #logo #portfo {
+  font-size: 2rem;
+  font-family: "Permanent Marker", cursive;
+  color: #ff0000;
+}
+header #logo #lio {
+  font-size: 2rem;
+  font-family: "Permanent Marker", cursive;
+  color: #fff;
+}
+header ul {
+  width: 50%;
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 1.2rem;
+}
+header ul li {
+  list-style-type: none;
+}
+header ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+header ul li a:hover {
+  color: #ff0000;
+}
+header button {
+  background-color: red;
+  color: #fff;
+  height: 40px;
+  width: 10%;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#home {
+  height: 100vh;
+  width: 100%;
+  /* border: 1px solid white; */
+  background-image: url(back-img-2.jpg.crdownload);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home #container {
+  height: 40%;
+  width: 80%;
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#home #container #first {
+  color: #ff0000;
+  font-size: 1.5rem;
+}
+#home #container #second {
+  color: #f2f8f8;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+#home #container #third {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+}
+button {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  height: 50px;
+  width: 150px;
+  cursor: pointer;
+}
+#Education {
+  height: 100vh;
+  width: 100%;
+  /* border: 1px solid; */
+  background-image: url(back-img-4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Education #container {
+  height: 100%;
+  width: 80%;
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#Education #container #ten {
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#Education #container #twelve {
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#Education #container #graduation {
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#project{
+    height: auto;
+    width: 100%;
+    border: 1px solid;
+}
+#project #container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+}
+#project #container .box img{
+    height: auto;
+    width: 100%;
+}
+#project #container .b-1{
+grid-area: 1/1/2/2;
+}
+#project #container .b-2{
+    grid-area: 2/1/3/2;
+}
+#project #container .b-3{
+    grid-area: 3/1/4/2;
+}
+#project #heading{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+}
+#Experence{
+    height: 100vh;
+    width: 100%;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Experence #heading{
+    height: 40%;
+    width: 100%;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
