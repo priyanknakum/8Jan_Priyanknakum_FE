@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      form {
+        /* height: 100vh; */
+        margin: auto;
+        width: 50%;
+        padding: 20px 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: start;
+        border: 1px solid;
+      }
+      #mail-pswd {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 15px;
+      }
+      div {
+        width: 100%;
+        /* border: 1px solid red; */
+        margin: 12px 0;
+      }
+      input {
+        padding: 7px 15px;
+        font-size: 1rem;
+      }
+      input[type="text"],
+      textarea {
+        width: 95% !important;
+      }
+      input[type="email"],
+      input[type="password"] {
+        width: 90% !important;
+      }
+      input:hover {
+        border: 3px solid blue;
+        background-color: lightgrey;
+      }
+      label {
+        font-size: 1.1rem;
+        margin-bottom: 5px;
+        /* display: block; */
+      }
+      .lable-block {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>User registration form</h1>
+    <form action="">
+      <div id="username">
+        <label class="lable-block" for="user-name"
+          ><strong>User-name</strong></label
+        >
+        <input type="text" id="user-name" placeholder="Enter your User Name" />
+      </div>
+
+      <div id="mail-pswd">
+        <div id="email">
+          <label class="lable-block" for="email"><strong>E-mail</strong></label>
+          <input type="email" id="email" placeholder="Enter your E-mail" />
+        </div>
+        <div id="pswd">
+          <label class="lable-block" for="password"
+            ><strong>password:</strong></label
+          >
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter Your Password"
+          />
+        </div>
+      </div>
+
+      <div id="dob">
+        <label for="dob"><strong>Date Of Birth</strong></label>
+        <input type="date" id="dob" />
+      </div>
+
+      <div id="color">
+        <label for="color"><strong>Your Favourite color</strong></label>
+        <input type="color" />
+      </div>
+
+      <div id="city">
+        <label for="city"><strong>Select your city</strong></label>
+        <select name="" id="city">
+          <option value="">howkinnes</option>
+          <option value="">New-York</option>
+          <option value="">Vakanda</option>
+          <option value="">Kama-Taj</option>
+        </select>
+      </div>
+      <div id="gender">
+        <strong>gender</strong>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" />
+        <label for="female">female</label>
+        <input type="radio" name="gender" id="female" />
+      </div>
+      <div id="food-items">
+        <strong>Favourite Food Items</strong>
+        <label for="burger">Burger</label>
+        <input type="checkbox" id="burger" />
+        <label for="pizza">Pizza</label>
+        <input type="checkbox" id="pizza" />
+        <label for="grc-brd">Garlic-Brade</label>
+        <input type="checkbox" id="grc-brd" />
+        <label for="noodles">noodles</label>
+        <input type="checkbox" id="noodles" />
+      </div>
+      <div id="address">
+        <label class="lable-block" for="Address"
+          ><strong>Enter your address</strong></label
+        >
+        <textarea
+          name=""
+          id="Address"
+          cols="30"
+          rows="10"
+          placeholder="Enter your address"
+        ></textarea>
+      </div>
+    </form>
+  </body>
+</html>
