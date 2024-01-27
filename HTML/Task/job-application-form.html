@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>application form</title>
+    <style>
+      form {
+        width: 80%;
+        border: 5px solid;
+        border-radius: 30px 0 30px 0;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 25px 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 25px 40px;
+        background-color: #fa8bff;
+        background-image: linear-gradient(
+          45deg,
+          #fa8bff 0%,
+          #2bd2ff 52%,
+          #2bff88 90%
+        );
+      }
+      h1 {
+        text-align: center;
+      }
+      .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 25px;
+      }
+      fieldset {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* border: 1px solid; */
+        gap: 25px;
+      }
+      .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 25px;
+      }
+      button {
+        background-color: chocolate;
+        height: 50px;
+        width: 100px;
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: 700;
+        color: #fff;
+        box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+          rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+        cursor: pointer;
+      }
+      #rs-btn {
+        background-color: chocolate;
+        height: 50px;
+        width: 100px;
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: 700;
+        color: #fff;
+        box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+          rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+        cursor: pointer;
+      }
+      input {
+        background-color: transparent;
+        font-size: 16px;
+        padding: 8px 5px;
+        border-radius: 6px;
+      }
+      textarea {
+        background-color: transparent;
+      }
+      select {
+        width: 50%;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Job Application Form</h1>
+    <form action="action.php">
+      <!-- --------------------------------------personal info---------------------- -->
+      <fieldset>
+        <legend>Personal Information</legend>
+        <div class="info">
+          <div>
+            <strong>First Name:</strong>
+            <input type="text" placeholder="Enter First Name" />
+          </div>
+          <div>
+            <strong><label for="DOB">Date Of Birth:</label></strong>
+            <input type="date" id="DOB" />
+          </div>
+          <div>
+            <strong><label for="num">Contact No:</label></strong>
+            <input type="tel" id="num" placeholder="Enter Your Number" />
+          </div>
+          <div>
+            <strong>Gender:</strong>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" />
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" />
+            <label for="other">Other</label>
+            <input type="radio" id="other" name="gender" />
+          </div>
+        </div>
+        <div class="info">
+          <div>
+            <strong>Middle Name:</strong>
+            <input type="text" placeholder="Enter Middle Name" />
+          </div>
+        </div>
+        <div class="info">
+          <div>
+            <strong>Last Name:</strong>
+            <input type="text" placeholder="Enter Last Name" />
+          </div>
+          <div>
+            <strong><label for="Age">Age:</label></strong>
+            <input type="number" id="Age" min="18" max="50" size="100" />
+          </div>
+          <div>
+            <strong><label for="email">Email Address:</label></strong>
+            <input type="email" id="email" placeholder="Enter Your Email" />
+          </div>
+          <div>
+            <label for="nati"><strong>Nationality</strong></label>
+            <input type="text" list="nat" />
+            <datalist id="nat">
+              <option value="Indian">Indian</option>
+              <option value="American">American</option>
+              <option value="African">African</option>
+              <option value="Afghani">Afghani</option>
+              <option value="Brazilian">Brazilian</option>
+            </datalist>
+          </div>
+        </div>
+      </fieldset>
+      <!-- ---------------------------------proffesional info----------------------      -->
+      <fieldset>
+        <legend>Proffesional Information</legend>
+        <div class="info">
+          <div>
+            <label for="course"><strong>Course:</strong></label>
+            <select name="course" id="course">
+              <option value="B.tech">B.tech</option>
+              <option value="B.E">B.E</option>
+              <option value="B.C.A.">B.C.A.</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div>
+            <label for="cgpa"><strong>CGPA:</strong></label>
+            <input type="number" id="cgpa" min="6" />
+          </div>
+          <div>
+            <label for="resume"
+              ><strong>Upload Your Resume Here:</strong></label
+            >
+            <input type="file" />
+          </div>
+        </div>
+        <div class="info">
+          <div>
+            <strong>Experience:</strong>
+            <label for="fresher">Fresher</label>
+            <input type="radio" id="fresher" name="Experience" />
+            <label for="yes">1 Year or more</label>
+            <input type="radio" id="yes" name="Experience" />
+          </div>
+
+          <div>
+            <strong>Programming Language:</strong>
+            <br />
+            <label for="py">Python</label>
+            <input type="checkbox" id="py" />
+            <label for="js">Java Script</label>
+            <input type="checkbox" id="js" />
+            <label for="j">Java</label>
+            <input type="checkbox" id="j" />
+            <label for="php">PHP</label>
+            <input type="checkbox" id="php" />
+          </div>
+          <div>
+            <label for="role">Role:</label>
+            <input type="text" id="role" list="role-select" />
+            <datalist id="role-select">
+              <option value="Front-end Developer">Front-end Developer</option>
+              <option value="Full-stack Developer">Full-stack Developer</option>
+              <option value="Web-desiner">Web-desiner</option>
+              <option value="Java Develpoer">Java Develpoer</option>
+              <option value="Python Develpoer">Python Develpoer</option>
+            </datalist>
+          </div>
+        </div>
+        <div class="info"></div>
+        <label for="hobby"><strong>Hobby:</strong></label>
+        <textarea name="hobby" id="" cols="30" rows="10"></textarea>
+      </fieldset>
+      <fieldset>
+        <legend>Address</legend>
+        <textarea
+          name=""
+          id=""
+          cols="158"
+          rows="10"
+          placeholder="Enter Your Address"
+        ></textarea>
+      </fieldset>
+      <div class="buttons">
+        <input type="reset" id="rs-btn" />
+        <button>Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
