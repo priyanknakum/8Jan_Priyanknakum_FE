@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: aqua;
+      }
+      .child:nth-child(1) {
+        height: 200px;
+        width: 200px;
+        background-color: red;
+      }
+      .child:nth-child(2) {
+        height: 200px;
+        width: 200px;
+        background-image: url(https://i.pinimg.com/originals/3d/df/5a/3ddf5ae7da16435bc840ef6f62d2b1ec.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+      .child:nth-child(3) {
+        height: 200px;
+        width: 200px;
+        background-color: pink;
+        background-image: url(https://i.pinimg.com/originals/37/4c/b1/374cb1eff8581e93c615bb08ba7c7b16.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 150px 150px;
+      }
+      .child:nth-child(4) {
+        height: 200px;
+        width: 200px;
+        background-image: url(https://images.pexels.com/photos/1820563/pexels-photo-1820563.jpeg?auto=compress&cs=tinysrgb&w=600),
+          url(https://images.pexels.com/photos/1381679/pexels-photo-1381679.jpeg?auto=compress&cs=tinysrgb&w=600);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 150px 150px, cover;
+      }
+      .child:nth-child(5) {
+        height: 200px;
+        width: 200px;
+        background-image: url(https://media0.giphy.com/media/dGfcCWY1W34BXOq0Y2/giphy.gif?cid=ecf05e47zsvg7or1igii0mi0okri9xlofdm4ljdpkxdsz8zz&ep=v1_gifs_gifId&rid=giphy.gif&ct=s),
+          url(https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg?auto=compress&cs=tinysrgb&w=600);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain, cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">child-1</div>
+      <div class="child">child-2</div>
+      <div class="child">child-3</div>
+      <div class="child">child-4</div>
+
+      <div class="child">child-5</div>
+    </div>
+  </body>
+</html>
